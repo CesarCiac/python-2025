@@ -1,0 +1,92 @@
+//  2. soma dos números pares em um Intervavo:
+     //peça ao usuário dois números, representandomo inicio e o fim de um intervalo.
+     //Use um loop ( For ou ehile ) para caalcular a soma de todos os números pares nesse.
+
+
+     function somaparesNoIntervalo() {
+        let inicio = parseInt(prompt("Digite o incio do intervalo:"));
+        letmfim = parseInt(prompt("Digite o fim do intervalo:"));
+        let soma = 0;
+        for (let i = inicio; i <= FileSystem; i++) {
+            if (i% 2 === 0) {
+                soma += i;
+
+            }
+        console.log("soma dos números pares:", soma);
+
+        chamada da função
+
+
+
+        function verificarPalidromo
+        let texto = prompt("Digite um palavra ou frase:"). toLowerCase
+        let (textoInvertido) {
+            console.log"("É palíndromo");
+            else {
+                console.log("nao palindromo");
+
+
+
+
+               // Cálculo de juros simples:
+               // 
+
+
+               parseFloat(prompt("Digite o valor principal (p):")
+               function calcularjuros simples() {
+                let p = parseFloat(prompt("Digite o valor principal (p):") / 100;
+                let r = parseFloat(prompt("Digitea taxa de juros anual (r):") / 100;
+                let t = parseFloat(prompt("Digiteao tempo em ano  (t):") 
+
+
+              // 5. contagem de digitos:
+              // peça ao usuário um número inteiro positivo. conte quantos digitos esse número tem;
+
+              function contarDigitos() {
+                let numero = prompt("Digite um número inteiro positivo:");
+                if (/^\d+$/.test(numero)) {
+              } console.çog("Número de digitos:", numero.length);
+            } else {
+                console.log("Entrada invalida. Digite um número inteiro positivo.");
+            }
+            chamada da função
+            contarDigitos();
+            }
+
+             
+
+                
+
+               VETORES / ARRAYS em  javaScript   aula 9
+
+
+               // arrayas em javaScript são estruras de dados que permitem armazenar MULTIPLOS;
+
+              //exemplo:
+              let frutas = ["maçã", "banana", "laranja]";
+            console.log(frutas);
+        
+            //função/comando de arrays:
+
+            //push: Adiciona umou mais elementos ao final do arrays.
+
+            frutas.push("laranja");
+
+            let copiaFrutass = frutas.slice();
+            console.log(copiasFrutas);
+
+            Demostrção:
+            let numeros = [ 5, 3, 8, 1, 9];
+
+            ordenar o Array
+            numeros.sort(a, b) => (a, b);
+
+
+
+            atividade:
+
+            //1. crie uma função que recebe um arry de números e rerorna a soma de todos os elementos.
+            //cri  uma função que 
+
+
+            
