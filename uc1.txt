@@ -86,8 +86,7 @@
             atividade:
 
             //1. crie uma função que recebe um arry de números e rerorna a soma de todos os elementos.
-            //2.crie  uma função que recebe um arry de string e retorna um novvo array com as strings em ordem alfabética.
-            //3. crie uma função que recebe um arry e retorna um novo arry sem elementos duplicados.
+            //cri  uma função que 
 
 
             

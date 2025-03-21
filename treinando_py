@@ -1,0 +1,4 @@
+rint(f"Tabuada do {numero}:")
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{5} x {1} = {1}")
