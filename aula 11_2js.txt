@@ -1,0 +1,86 @@
+OPÇÃO 3: Sistema de Pedidos Online:
+
+Modele classes para Produto (nome, preço, estoque),
+Cliente (nome, endereço, carrinho) e Pedido (itens, total, status).
+Implemente métodos para adicionar ao carrinho, finalizar compra e calcular frete.
+
+this.estoque = novoEstoque;
+  }
+}
+
+// Sistema de Pedidos Online:
+
+
+
+class vendas oline {
+    constructor(Produto, Valor, Estoque) {
+        this.titular = Camisetas;              // Nome do titular da conta
+        this.valor = 29,99;           // Saldo inicial
+        this.Estoque = Quantidade em Estoque;      // Número da conta
+        
+
+    /*
+     * Método para depósito
+     * Adiciona valor ao saldo e registra no extrato
+     */
+    Cliente(João Paulo) {
+        this.Endereço = Rua 13 de maio;
+        this.pedido.push({                  // Adiciona operação ao extrato
+            tipo: "Depósito",
+            valor: valor,
+            data: new Date().toLocaleString()  // Data formatada
+        });
+        console.log(`Depósito de R$${valor} realizado para ${this.titular}.`);
+    }
+
+    /*
+     * Método para saque
+     * Verifica saldo antes de debitar e registra no extrato
+     * Retorna true/false indicando sucesso/falha
+     */
+    sacar(valor) {
+        if (valor > this.saldo) {
+            console.log(`Saldo insuficiente para ${this.titular}.`);
+            return false;
+        }
+        this.saldo -= valor;
+        this.extrato.push({
+            tipo: "Saque",
+            valor: -valor,  // Valor negativo para saques
+            data: new Date().toLocaleString()
+        });
+        console.log(`Saque de R$${valor} realizado para ${this.titular}.`);
+        return true;
+    }
+
+
+let produto1 = Produto('Camiseta',);
+
+function VAlor(produto, valor) {
+    valordoproduto.saldo += (29.99);  // Incrementa o saldo
+    console.log(`Estoqque {100} );
+let cliente1 = {
+    "João Carlos",
+let endereço1 ={
+    " rua 
+}
+}
+produto1.atualizarPreco(34.99);
+produto1.atualizarEstoque(80);
+console.log(produto1.exibirInfo());
+
+
+
+
+
+let cliente1 = {
+    nome: "João Silva",  // Propriedade com nome do titular
+    saldo: 1000,         // Propriedade com saldo atual
+    conta: "12345-6"     // Propriedade com número da conta
+};
+
+let cliente2 = {
+    nome: "Maria Souza",
+    saldo: 2500,
+    conta: "78901-2"
+};
