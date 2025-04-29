@@ -1,0 +1,292 @@
+#comentários de uma linha
+"""
+comentários de múltiplas linhas (na verdade, são strings não atribuidas)
+"""
+
+#Exemplo de função básica
+def Subtracao(nome):
+    return f'Olá,{nome}!'
+
+print(saudacao ('Maria')) # Saída: Olá MAria!
+
+# Tipo basíco
+inteiro = 42
+flutuante = 3.1415
+texto = "python"
+booleano = True
+complexo = 3 + 4j
+
+#Tipos sequenciais
+lista = [1, 2, 3, "quatro"]
+tupla = (1, 2, 3,) # Imutável
+conjunto = {1, 2, 3,} # Únicos e não ordenados
+dicionário = {'nome': 'João', 'idade':}
+
+# Nome representa a ausência de valor
+nada = Nome 
+ 
+# Verificando tipos
+print(type(texto)) # <class 'str'>
+print(insintance(flutuante, float)) #true
+# Entrada básica
+nome = input("Digite seu nome: ")
+print(f"Bem-vindo, {nome}!")
+
+# Convertendo tipos
+idade = int(input("Digite sua idade: "))
+altura = float(input("Digite sua altura (em metros): "))
+
+print(f"Você tem {idade} anos e {altura}m de altura.")
+# Exemplo básico
+nota = float(input("Digite sua nota (0-10): "))
+
+if nota >= 9:
+    conceito = "A"
+elif nota >= 7:
+    conceito = "B"
+elif nota >= 5:
+    conceito = "C"
+else:
+    conceito = "D"
+
+print(f"Seu conceito é {conceito}")
+
+# Operadores lógicos
+idade = int(input("Digite sua idade: "))
+tem_ingresso = input("Tem ingresso? (s/n): ").lower() == 's'
+
+if idade >= 18 and tem_ingresso:
+    print("Acesso permitido ao evento.")
+elif idade < 18 and tem_ingresso:
+    print("Acesso permitido apenas com responsável.")
+else:
+    print("Acesso negado.")
+
+# Operador ternário
+status = "Aprovado" if nota >= 5 else "Reprovado"
+print(status)
+def calcular_imc():
+    peso = float(input("Digite seu peso (kg): "))
+    altura = float(input("Digite sua altura (m): "))
+    
+    imc = peso / (altura ** 2)
+    
+    print(f"Seu IMC é {imc:.2f}")
+    
+    if imc < 18.5:
+        print("Classificação: Magreza")
+    elif imc < 25:
+        print("Classificação: Normal")
+    elif imc < 30:
+        print("Classificação: Sobrepeso")
+    elif imc < 40:
+        print("Classificação: Obesidade")
+    else:
+        print("Classificação: Obesidade Grave")
+
+calcular_imc()
+def verificar_palindromo():
+    texto = input("Digite uma palavra ou frase: ").lower().replace(" ", "")
+    if texto == texto[::-1]:
+        print("É um palíndromo!")
+    else:
+        print("Não é um palíndromo.")
+
+verificar_palindromo()
+# Iterando sobre uma lista
+frutas = ["maçã", "banana", "laranja", "uva"]
+for fruta in frutas:
+    print(fruta.upper())
+
+# Com enumerate para índice e valor
+for indice, fruta in enumerate(frutas, start=1):
+    print(f"{indice}. {fruta}")
+
+# Range
+for i in range(5):  # 0 a 4
+    print(i)
+
+for i in range(1, 11, 2):  # 1, 3, 5, 7, 9
+    print(i)
+
+# "List comprehension"
+quadrados = [x**2 for x in range(10)]
+print(quadrados)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+# Exemplo básico
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
+
+# Loop com break e continue
+while True:
+    resposta = input("Digite 'sair' para terminar: ")
+    if resposta.lower() == 'sair':
+        break
+    elif resposta == '':
+        continue
+    print(f"Você digitou: {resposta}")
+
+# Exemplo: Adivinhe o número
+import random
+from random import randint
+numero_secreto = random.randint(1, 100)
+tentativas = 0
+
+while True:
+    tentativa = int(input("Adivinhe o número (1-100): "))
+    tentativas += 1
+    
+    if tentativa < numero_secreto:
+        print("Muito baixo!")
+    elif tentativa > numero_secreto:
+        print("Muito alto!")
+    else:
+        print(f"Parabéns! Você acertou em {tentativas} tentativas.")
+        break
+    import random
+def jogo_da_forca():
+    palavras = ["python", "programacao", "computador", "algoritmo", "desenvolvimento"]
+    palavra_secreta = random.choice(palavras)
+    letras_corretas = set()
+    tentativas = 6
+    
+    while tentativas > 0:
+        # Mostra a palavra com letras adivinhadas
+        palavra_exibida = ""
+        for letra in palavra_secreta:
+            if letra in letras_corretas:
+                palavra_exibida += letra
+            else:
+                palavra_exibida += "_"
+        print(palavra_exibida)
+        
+        if palavra_exibida == palavra_secreta:
+            print("Parabéns! Você venceu!")
+            return
+        
+        # Pede uma letra
+        letra = input("Digite uma letra: ").lower()
+        
+        if letra in letras_corretas:
+            print("Você já tentou essa letra.")
+        elif letra in palavra_secreta:
+            letras_corretas.add(letra)
+            print("Letra correta!")
+        else:
+            tentativas -= 1
+            print(f"Letra incorreta! Tentativas restantes: {tentativas}")
+    
+    print(f"Game over! A palavra era: {palavra_secreta}")
+
+jogo_da_forca()
+import math
+
+def calculadora():
+    operacoes = {
+        '+': lambda x, y: x + y,
+        '-': lambda x, y: x - y,
+        '*': lambda x, y: x * y,
+        '/': lambda x, y: x / y,
+        '^': lambda x, y: x ** y,
+        '√': lambda x: math.sqrt(x),
+        'sen': lambda x: math.sin(math.radians(x)),
+        'cos': lambda x: math.cos(math.radians(x)),
+        'tan': lambda x: math.tan(math.radians(x))
+    }
+    
+    while True:
+        print("\nOperações disponíveis:")
+        print("+, -, *, /, ^ (potência), √ (raiz), sen, cos, tan")
+        print("Digite 'sair' para encerrar")
+        
+        op = input("Operação: ")
+        
+        if op.lower() == 'sair':
+            break
+        
+        if op in ['√', 'sen', 'cos', 'tan']:
+            num = float(input("Número: "))
+            try:
+                resultado = operacoes[op](num)
+                print(f"Resultado: {resultado:.4f}")
+            except ValueError as e:
+                print(f"Erro: {e}")
+        elif op in operacoes:
+            num1 = float(input("Primeiro número: "))
+            num2 = float(input("Segundo número: "))
+            try:
+                resultado = operacoes[op](num1, num2)
+                print(f"Resultado: {resultado:.4f}")
+            except ZeroDivisionError:
+                print("Erro: Divisão por zero!")
+            except Exception as e:
+                print(f"Erro: {e}")
+        else:
+            print("Operação inválida!")
+
+calculadora()
+def gerenciador_tarefas():
+    tarefas = []
+    
+    while True:
+        print("\nGerenciador de Tarefas")
+        print("1. Adicionar tarefa")
+        print("2. Listar tarefas")
+        print("3. Marcar como concluída")
+        print("4. Remover tarefa")
+        print("5. Sair")
+        
+        opcao = input("Escolha uma opção: ")
+        
+        if opcao == '1':
+            tarefa = input("Digite a nova tarefa: ")
+            tarefas.append({"tarefa": tarefa, "concluida": False})
+            print("Tarefa adicionada!")
+        
+        elif opcao == '2':
+            if not tarefas:
+                print("Nenhuma tarefa cadastrada.")
+            else:
+                print("\nLista de Tarefas:")
+                for i, item in enumerate(tarefas, 1):
+                    status = "✓" if item["concluida"] else " "
+                    print(f"{i}. [{status}] {item['tarefa']}")
+        
+        elif opcao == '3':
+            if not tarefas:
+                print("Nenhuma tarefa para marcar.")
+            else:
+                try:
+                    num = int(input("Número da tarefa concluída: ")) - 1
+                    if 0 <= num < len(tarefas):
+                        tarefas[num]["concluida"] = True
+                        print("Tarefa marcada como concluída!")
+                    else:
+                        print("Número inválido.")
+                except ValueError:
+                    print("Digite um número válido.")
+        
+        elif opcao == '4':
+            if not tarefas:
+                print("Nenhuma tarefa para remover.")
+            else:
+                try:
+                    num = int(input("Número da tarefa a remover: ")) - 1
+                    if 0 <= num < len(tarefas):
+                        removida = tarefas.pop(num)
+                        print(f"Tarefa '{removida['tarefa']}' removida.")
+                    else:
+                        print("Número inválido.")
+                except ValueError:
+                    print("Digite um número válido.")
+        
+        elif opcao == '5':
+            print("Saindo do gerenciador...")
+            break
+        
+        else:
+            print("Opção inválida!")
+
+gerenciador_tarefas()
+
