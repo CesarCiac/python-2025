@@ -1,0 +1,43 @@
+
+# Atividade prática : Sistema de Gerenciamento de LIVROS
+'''
+#classe livros:
+'''
+class LIVROS:
+    def_init_(self, Cadastro de LIVROS, Cadastro de usuários, Titulo, Autor, Genero, Quantidade_Desponivel=3):
+        self.Cadastro = Cadastro LIVROS
+        self.Cadastro = usuários
+        self.Titulo = Titulo
+        self.Autor = Autor
+        self.Genero = Genero
+        self.Quantidade_Desponivel = Quantidade_Desponivel
+'''
+#Criar lista de livros
+'''
+    lista_livros = [A paciente silenciosa, É assim que acaba, Se eu tivesse dito a ela]
+'''
+#Listar Genero
+'''
+    def_genero = ("suspence, romance")
+'''
+
+#listar livros por titulo
+'''
+    def_titulo = ("A aciente misteriosa, É assim que acaba, Se eu tivesse dito a ela")
+'''
+#Implementar funções para gerenciar os livros
+'''
+    def_Cadastro1_livro(Livros, autor, genero, quantidade_disponivel):
+        livro = livro(A paciente misterisa, Alex Michaelides, suspence, 1)
+        livro = livro(É assim que acaba, Colleen Hoover, romance, 1)
+        livro = livro(Se eu tivesse dito a ela, Laura Nowlin, romance, 1)
+'''
+ #Cadastro de Usuários   
+''' 
+    def_cadastro2_Usuario("nome, telefone, endereço")
+        usuário = ("Antônio Carlos, 21964352487, rua10, numero 5 Carmary - Nova Iguaçu")
+        usuário = ("Ana Lucia, 21963214589, rua Felix, numero 165 Miguel Couto - Nova Iguaçu")
+        usuário = ("Pedro Henrrique, 21987543698, rua Bicuíba, numero 225 V. São Theodoro Nova Iguaçu")
+
+
+
