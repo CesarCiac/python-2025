@@ -1,0 +1,45 @@
+# Query: Atividade_aula 6.py
+# ContextLines: 1
+
+import json
+import datetime
+
+#Dicionário para armazenar as tarefas em memória
+tarefas = {}
+
+def adicionar = tarefa(descricao):
+    ''1'Adiciona uma tarefa ao dicionário,'''
+    id_tarefa - len(tarefas) + 1
+    tarefas[id_tarefa] = {
+        "descricao":descricao,
+        "criacao": datetime,datetime,niw().strtime("%m-%h:%m:%s"),
+        "status": "pendente"
+
+    }
+    print(f"tarefa '{descricao}' adicionada com id {id_tarefa}")
+
+def lista_tarefa():
+    """lista dodas as tarefas."""
+    if not tarefas:
+        print("nenhuma tarefa encontrada.")
+        return
+
+    print ("tarefas:")
+    for id_tarefa, detalhes in tarefa.items():
+        if id_tarefa, detalhes in tarefas.items():
+            print(f"id: [id_tarefa},descrição: {detalhes['descricao']}, status: {detalhes['status']}")
+
+def marcar_como_concluida(id_tarefa):
+        """marca uma tarefa como concluída."""
+        if id_tarefa in tarefas:
+            tarefas[id_tarefa]["status"] = "concluida"
+            print(f"tarefa {id_tarefa} marcada como concluída.")
+        else:
+            print(f"tarefa com id {id_tarefa} não encontrada.")
+
+#exemplo de uso
+adicionar_tarefa("ir ao supermercado")
+adicionar_tarefa("agendar consulta médica")
+listar_tarefas()
+marcar_comoconcluida(1)
+listar_tarefas()
